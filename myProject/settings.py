@@ -31,7 +31,7 @@ ITEM_PIPELINES = {
 }
 
 # 设置爬虫爬取的最大深度
-DEPTH_LIMIT = 10
+DEPTH_LIMIT = 100
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32

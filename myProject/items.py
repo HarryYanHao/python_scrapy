@@ -13,4 +13,6 @@ class MyprojectItem(scrapy.Item):
     # name = scrapy.Field()
     title = scrapy.Field()
     content = scrapy.Field()
+    number = scrapy.Field()
+    author = scrapy.Field()
     pass

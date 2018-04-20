@@ -48,12 +48,19 @@ class ListSpider(CrawlSpider):
          #img = response.selector.xpath('//div[@class="picurl"]/img/@src')[0].extract().decode('utf-8')
 
          content = response.selector.xpath('/html/body/div[2]/div[1]/div[1]/div[4]')[0].extract().decode('utf-8')
+         number = response.selector.xpath('//div[@class="info"]/small[@id="dj"]')[0].extract().decode('utf-8')
+         author = response.selector.xpath('//div[@class="info"]/a')[0].extract().decode('utf-8')
+
          #print(content);
          #exit();
          item['title'] = go_remove_tag(title)
 
          #item['img'] = img
          item['content'] = go_remove_tag(content)
+
+         item['number'] = go_remove_tag(number)
+         item['author'] = go_remove_tag(author)
+
 
          yield item
 
