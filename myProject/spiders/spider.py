@@ -24,7 +24,7 @@ class ListSpider(CrawlSpider):
      allowed_domains = ["www.jj59.com"]
      # 开始URL
      start_urls = [
-         "https://www.jj59.com/jjart/422180"
+         "https://www.jj59.com/jjart/405991"
      ]
      # 爬取规则,不带callback表示向该类url递归爬取
      rules = (
